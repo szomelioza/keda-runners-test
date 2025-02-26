@@ -1,0 +1,105 @@
+name: Simple Sleep Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: First Job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Check runner environment
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner temp directory: $RUNNER_TEMP"
+          echo "Runner tool cache: $RUNNER_TOOL_CACHE"
+      
+      - name: Sleep for 1.5 minutes
+        run: sleep 90
+      
+      - name: Job completed
+        run: echo "Job 1 completed"
+
+  job2:
+    name: Second Job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Check runner environment
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner temp directory: $RUNNER_TEMP"
+          echo "Runner tool cache: $RUNNER_TOOL_CACHE"
+      
+      - name: Sleep for 1.5 minutes
+        run: sleep 90
+      
+      - name: Job completed
+        run: echo "Job 2 completed"
+
+  job3:
+    name: Third Job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Check runner environment
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner temp directory: $RUNNER_TEMP"
+          echo "Runner tool cache: $RUNNER_TOOL_CACHE"
+      
+      - name: Sleep for 1.5 minutes
+        run: sleep 90
+      
+      - name: Job completed
+        run: echo "Job 3 completed"
+
+  job4:
+    name: Fourth Job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Check runner environment
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner temp directory: $RUNNER_TEMP"
+          echo "Runner tool cache: $RUNNER_TOOL_CACHE"
+      
+      - name: Sleep for 1.5 minutes
+        run: sleep 90
+      
+      - name: Job completed
+        run: echo "Job 4 completed"
+
+  job5:
+    name: Fifth Job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Check runner environment
+        run: |
+          echo "Runner name: $RUNNER_NAME"
+          echo "Runner OS: $RUNNER_OS"
+          echo "Runner temp directory: $RUNNER_TEMP"
+          echo "Runner tool cache: $RUNNER_TOOL_CACHE"
+      
+      - name: Sleep for 1.5 minutes
+        run: sleep 90
+      
+      - name: Job completed
+        run: echo "Job 5 completed"
